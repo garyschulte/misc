@@ -8,9 +8,9 @@ from elasticsearch import Elasticsearch
 import json
 import datetime
 
-slack = Slacker('xoxp-44709805366-44715811712-54834873393-803cb7c837')
+slack = Slacker('redact')
 sid = SentimentIntensityAnalyzer()
-es = Elasticsearch('http://search-nltk-hackday-jarxkri3ge76dznvckb62i25hq.us-west-2.es.amazonaws.com:80')
+es = Elasticsearch('redact:80')
 
 # get users in the #general channel so we can attribute names
 users={}
